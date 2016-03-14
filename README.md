@@ -2,7 +2,7 @@ Leftronic UI Task
 ===========================
 
 At Leftronic we work with a few technologies that are important on the
-front-end: React, D3, ImmutableJS, and Gulp. In this vain, we want
+front-end: React, D3, ImmutableJS, and Gulp. In this vein, we want
 candidates to use these to create a simple visualization to as a test.
 
 
