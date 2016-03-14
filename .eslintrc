@@ -1,0 +1,45 @@
+{
+    "parser": "babel-eslint",
+
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+
+    "ecmaFeatures": {
+        "arrowFunctions": true,
+        "classes": true,
+        "jsx": true
+    },
+
+    "plugins": [
+      "react"
+    ],
+
+    "rules": {
+
+        // Style
+        "camelcase": 1,
+        "quotes": [2, "single"],
+        "no-new-object": 2,
+        "no-array-constructor": 2,
+        "quote-props": [2, "consistent-as-needed"],
+        "prefer-template": 2,
+        "arrow-spacing": [2, { "before": true, "after": true }],
+        "prefer-arrow-callback": 2,
+
+
+        // Functionality
+        "strict": 0,
+        "semi": [2, "always"],
+        "max-depth": [2, 2], // No more than two if's nested
+        "max-params": [2, 4], // No more than 4 parameters for any function
+        "no-var": 2,
+        "prefer-const": 2, // Consider using const if variable is not changed
+        "no-const-assign": 2, // Don't assign to const
+
+        // Functionality optional?
+        "no-loop-func": 2, // No function declaration inside loops (good and bad)
+        "no-param-reassign": 2 // Do not reassign parameters
+    }
+}
