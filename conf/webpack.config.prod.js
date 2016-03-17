@@ -2,10 +2,9 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    context: path.resolve(__dirname),
     entry: './src/index.js',
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, '../dist'),
         filename: 'app.min.js',
     },
     resolve: {
@@ -43,6 +42,13 @@ module.exports = {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loader: 'babel',
+                query: {
+                  presets: [
+                    'es2015',
+                    'stage-1',
+                    'react'
+                  ]
+                },
             },
             {
                 test: /\.woff\d?(\?.+)?$/,
