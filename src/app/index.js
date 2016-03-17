@@ -6,7 +6,7 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <h1>Leftronic UI Test</h1>
+        <h1 className="text-center">Leftronic UI Test</h1>
         <Widget />
       </div>
     );
