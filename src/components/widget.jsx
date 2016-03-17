@@ -6,17 +6,17 @@ import HistoryChart from './historyChart.jsx';
 export default class Widget extends Component {
   constructor(props) {
     super(props);
-    const history = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const history = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => {
+      return {key: n, value: Math.floor(Math.random() * 9999)};
+    });
 
     this.state = {
       height: 500,
       width: 700,
-      currentNumber: 50,
+      currentNumber: history[0].value,
       currentKey: history.length,
       maxBarNumber: 10,
-      history: history.map((n) => {
-        return {key: n, value: Math.floor(Math.random() * 9999)};
-      })
+      history: history
     };
   }
 

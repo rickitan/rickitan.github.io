@@ -6,6 +6,7 @@ body {
 
 #widget {
   background-color: black;
+  animation: fade-in 5s;
 }
 
 .new-number-submit-button {
@@ -42,4 +43,9 @@ $time-step: $time/$max;
   100% {
     stroke-dashoffset: -($dash + $dash-gap) * $max;
   }
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
